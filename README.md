@@ -1,125 +1,20 @@
-# 🌐 SHAUNJAY ROSHAN T – Developer Portfolio
+# vite ⚡
 
-Welcome to my personal portfolio website!
-This project showcases my skills, projects, and experience as a **Full Stack Developer \& AI Enthusiast**.
+> Next Generation Frontend Tooling
 
-🔗 **Live Demo:** [https://your-vercel-link.vercel.app
-](https://portfolio-react-two-ivory.vercel.app/)
----
+- 💡 Instant Server Start
+- ⚡️ Lightning Fast HMR
+- 🛠️ Rich Features
+- 📦 Optimized Build
+- 🔩 Universal Plugin Interface
+- 🔑 Fully Typed APIs
 
-## 🚀 Features
+Vite (French word for "fast", pronounced `/vit/`) is a new breed of frontend build tool that significantly improves the frontend development experience. It consists of two major parts:
 
-* Responsive modern portfolio design
-* Smooth navigation with React
-* Project showcase section
-* Skills section
-* Resume section
-* Contact form with EmailJS integration
-* Mobile-friendly UI
+- A dev server that serves your source files over [native ES modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules), with [rich built-in features](https://vite.dev/guide/features.html) and astonishingly fast [Hot Module Replacement (HMR)](https://vite.dev/guide/features.html#hot-module-replacement).
 
-\---
+- A [build command](https://vite.dev/guide/build.html) that bundles your code with [Rollup](https://rollupjs.org), pre-configured to output highly optimized static assets for production.
 
-## 🛠️ Tech Stack
+In addition, Vite is highly extensible via its [Plugin API](https://vite.dev/guide/api-plugin.html) and [JavaScript API](https://vite.dev/guide/api-javascript.html) with full typing support.
 
-**Frontend**
-
-* React.js
-* JavaScript (ES6+)
-* HTML5
-* CSS3
-
-**Tools \& Services**
-
-* EmailJS (Contact form emails)
-* Vite (Build tool)
-* Git \& GitHub
-* Vercel (Deployment)
-
-\---
-
-## 📂 Project Structure
-
-```
-portfolio/
-│
-├── public/
-├── src/
-│   ├── assets/        # Images \& static assets
-│   ├── components/    # React components
-│   │   ├── Navbar
-│   │   ├── Home
-│   │   ├── About
-│   │   ├── Skills
-│   │   ├── Projects
-│   │   ├── Resume
-│   │   └── Contact
-│   │
-│   ├── App.jsx
-│   └── main.jsx
-│
-├── .env
-├── .gitignore
-├── package.json
-└── README.md
-```
-
-\---
-
-## ⚙️ Installation \& Setup
-
-1️⃣ Clone the repository
-
-```bash
-git clone https://github.com/Santhosh944.git
-```
-
-2️⃣ Navigate to the project folder
-
-```bash
-cd portfolio
-```
-
-3️⃣ Install dependencies
-
-```bash
-npm install
-```
-
-4️⃣ Start the development server
-
-```bash
-npm run dev
-```
-
-\---
-
-## 🔑 Environment Variables
-
-Create a `.env` file in the root directory and add your EmailJS keys:
-
-```
-VITE\_EMAILJS\_SERVICE\_ID=your\_service\_id
-VITE\_EMAILJS\_TEMPLATE\_ID=your\_template\_id
-VITE\_EMAILJS\_PUBLIC\_KEY=your\_public\_key
-```
-
-⚠️ `.env` is ignored using `.gitignore` to protect API keys.
-
-\---
-
-
-
-\---
-
-## 📬 Contact
-
-If you'd like to connect:
-
-* GitHub:[ https://github.com/your-username](https://github.com/Santhosh944)
-* LinkedIn: [https://linkedin.com/in/your-linkedin](https://www.linkedin.com/in/santhosh-vinayagam/)
-* Email: [santhosh.v.ai16@gmail.com](mailto:santhosh.v.ai16@gmail.com)
-
-\---
-
-⭐ If you like this project, feel free to **star the repository**!
-
+[Read the Docs to Learn More](https://vite.dev).
