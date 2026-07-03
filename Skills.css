@@ -1,0 +1,235 @@
+/* ===============================
+   SECTION BACKGROUND
+================================= */
+.skill-bg {
+  background-image: url("../../assets/images/SkillBackground.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  padding: 100px 8%;
+}
+
+/* ===============================
+   MAIN HEADING
+================================= */
+.skill-heading {
+  text-align: center;
+  font-size: clamp(32px, 5vw, 50px);
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+
+/* ===============================
+   GRID LAYOUT
+================================= */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 3rem auto;
+}
+
+/* ===============================
+   SKILL CARD
+================================= */
+.skill {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* ===============================
+   SKILL HEADING
+================================= */
+.skills-heading {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #393e46;
+  text-align: center;
+}
+
+/* ===============================
+   SKILL BAR GROUP
+================================= */
+.skill-box {
+  margin-bottom: 1.5rem;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.skill-header .title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+
+.skill-header .percent {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6f42c1;
+}
+
+.skill-bar {
+  height: 8px;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 6px;
+  background: rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.skill-per {
+  position: relative;
+  display: block;
+  height: 100%;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #6f42c1, #9f7aea);
+  animation: progress 1s ease-in-out forwards;
+  width: 0;
+}
+
+.skill-per.html       { width: 90%; }
+.skill-per.css        { width: 85%; }
+.skill-per.javascript { width: 75%; }
+.skill-per.react      { width: 80%; }
+.skill-per.java       { width: 80%; }
+.skill-per.node       { width: 75%; }
+.skill-per.sql        { width: 80%; }
+.skill-per.mongo      { width: 70%; }
+.skill-per.python     { width: 75%; }
+.skill-per.dsa        { width: 80%; }
+.skill-per.oops       { width: 85%; }
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+}
+
+/* ===============================
+   LARGER EXTRA CARDS
+================================= */
+.skill-card {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #393e46;
+  margin-bottom: 1.5rem;
+}
+
+/* ===============================
+   TAG PILLS
+================================= */
+.tag-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.tag-pill {
+  background: #ede7ff;
+  color: #6f42c1;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  transition: 0.3s ease;
+  cursor: default;
+}
+
+.tag-pill:hover {
+  background: #6f42c1;
+  color: #fff;
+}
+
+/* ===============================
+   TOOLS GRID
+================================= */
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.tool-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ede7ff;
+  padding: 1rem;
+  border-radius: 14px;
+  text-align: center;
+  font-weight: 600;
+  color: #6f42c1;
+  transition: 0.3s ease;
+}
+
+.tool-item:hover {
+  background: #6f42c1;
+  color: #fff;
+  transform: translateY(-4px);
+}
+
+.tool-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.tool-item i {
+  color: #393e46;
+  font-size: 32px;
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+@media (max-width: 768px) {
+  .skill {
+    padding: 1.5rem;
+  }
+
+  .skill-card {
+    padding: 1.5rem;
+  }
+
+  .skills-heading {
+    font-size: 18px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+}

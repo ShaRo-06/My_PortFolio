@@ -1,0 +1,266 @@
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 0;
+  z-index: 9999;
+}
+
+.navbar.scrolled {
+  position: fixed;
+  top: 0;
+  background: white;
+  padding: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* CONTAINER */
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  width: 3.3rem;
+  height: 3.3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.navbar.scrolled .logo-name {
+  color: #393e46;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  gap: 38px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.3rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* ========================= */
+/* TOP (OVER HERO IMAGE) */
+/* ========================= */
+
+.navbar:not(.scrolled) .nav-links a {
+  color: #ffffff;
+}
+
+.navbar:not(.scrolled) .nav-links a.active {
+  color: #282b2e;
+}
+
+/* ========================= */
+/* AFTER SCROLL */
+/* ========================= */
+
+.navbar.scrolled .nav-links a {
+  color: #605c5c;
+}
+
+.navbar.scrolled .nav-links a.active {
+  color: #202225;
+  font-weight: bold;
+}
+
+/* ========================= */
+/* PURPLE UNDERLINE */
+/* ========================= */
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #6f42c1;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  border: 0.5px solid #b3b1b1;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 4px;
+  width: 26px;
+  background: white;
+  border-radius: 12px;
+  margin: 2px 0;
+  transition: 0.3s ease;
+}
+
+.navbar.scrolled .hamburger span {
+  background: #393e46;
+}
+
+@media (max-width: 991px) and (min-width: 769px) {
+
+  .logo {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .nav-container {
+    width: 90%;
+  }
+
+  .nav-links {
+    gap: 25px; 
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
+  }
+
+  .logo-name {
+    font-size: 1.4rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .logo {
+    width: 2.9rem;
+    height: 2.9em;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger span {
+    background: #393e46;
+  }
+
+  .navbar {
+    background: transparent;
+    padding: 20px 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .nav-container {
+    width: 90%;
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translate(-50%, -10px);
+    width: 90%;
+    max-width: 360px;
+    background: #f3f4f6;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 18px 0;
+    gap: 8px; 
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, 0);
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+  }
+
+  .nav-links a.active {
+    color: #111827;
+    font-weight: 900;
+  }
+
+  .navbar:not(.scrolled) .nav-links a {
+    color: #6b7280;
+  }
+
+  .logo-name {
+    font-size: 1.4rem; 
+  }
+}
+
+@media (max-width: 568px) {
+  .logo {
+    width: 2.7rem;
+    height: 2.7em;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .logo-name {
+    font-size: 1.3rem; 
+  }
+
+  .hamburger {
+    padding: 7px;
+    cursor: pointer;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  .hamburger span {
+    height: 3px;
+    width: 22px;
+  }
+
+  .nav-links {
+    max-width: 340px;
+  }
+}
+

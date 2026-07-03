@@ -1,0 +1,103 @@
+/* ===== SECTION ===== */
+.project-section {
+  background-image: url("../../assets/images/ProjectBackground.jpeg");
+  padding: 100px 8%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  background-repeat: no-repeat;
+}
+
+/* ===== HEADINGS ===== */
+.project-heading {
+  color: #6f42c1;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.project-subtitle {
+  color: #393e46;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+/* ===== GRID LAYOUT ===== */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* ===== CARD ===== */
+.project-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== TITLE ===== */
+.project-title {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* ===== DESCRIPTION ===== */
+.project-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* ===== TAGS ===== */
+.project-tags {
+  margin-bottom: 15px;
+}
+
+.tag {
+  display: inline-block;
+  background: #6a0dad;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin: 5px 5px 0 0;
+}
+
+/* ===== LINKS ===== */
+.project-links a {
+  display: inline-block;
+  background: #6a0dad;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 10px;
+  transition: background 0.3s ease;
+}
+
+.project-links a:hover {
+  background: #530a9c;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .project-heading {
+    font-size: 36px;
+  }
+
+  .project-subtitle {
+    font-size: 16px;
+  }
+}
